@@ -1,3 +1,4 @@
+import { Tooltip } from "@mui/material";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -65,10 +66,11 @@ const Header = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
-              <Link className="mr-5 hover:text-gray-900">
-                <p>{user.displayName}</p>
-                <img className="rounded h-10 " src={user.photoURL}></img>{" "}
-              </Link>
+              <Tooltip title={user?.displayName}>
+                <Link className="mr-5 hover:text-gray-900">
+                  <img className="rounded h-10 " src={user.photoURL}></img>{" "}
+                </Link>
+              </Tooltip>
             </>
           ) : (
             <>
@@ -77,6 +79,9 @@ const Header = () => {
               </Link>
               <Link to={"/register"} className="mr-5 hover:text-gray-900">
                 Regsiter{" "}
+              </Link>
+              <Link to="/login" className="mr-5 hover:text-gray-900">
+                Login
               </Link>
             </>
           )}
