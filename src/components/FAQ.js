@@ -9,22 +9,22 @@ const FAQ = () => {
 		<h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">Frequently Asked Questions</h2>
 		<div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
 			<details>
-				<summary className="py-2 outline-none cursor-pointer focus:underline">Optio maiores eligendi molestiae totam dolores similique?</summary>
+				<summary className="py-2 outline-none cursor-pointer focus:underline">How does the programming courses work?</summary>
 				<div className="px-4 pb-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde neque in fugiat magni, quas animi enim veritatis deleniti ex. Impedit.</p>
+					<p>Almost all programming languages work the same way: You write code to tell it what to do: print("Hello, world"). The code is compiled, which turns it into machine code the computer can understand. The computer executes the code, and writes Hello, world back to us.</p>
 				</div>
 			</details>
 			<details>
-				<summary className="py-2 outline-none cursor-pointer focus:underline">Modi dolorem veritatis culpa quos consequuntur beatae itaque excepturi perspiciatis?</summary>
+				<summary className="py-2 outline-none cursor-pointer focus:underline">Which is the course of Operating System ?</summary>
 				<div className="px-4 pb-4">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur quae, eos explicabo odit minima libero veniam similique quibusdam doloribus facilis ipsa accusantium vel maiores corrupti! Libero voluptate a doloribus?</p>
+					<p>The course is split into four sections: (1) Introduction, (2) Process and Thread Management, (3) Resource Management and Communication, and (4) Distributed Systems.</p>
 				</div>
 			</details>
 			<details>
-				<summary className="py-2 outline-none cursor-pointer focus:underline">Magni reprehenderit possimus debitis?</summary>
+				<summary className="py-2 outline-none cursor-pointer focus:underline">Why is web technology important?</summary>
 				<div className="px-4 pb-4 space-y-2">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
-					<p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+					<p>Learning Web Technology is essential today because Internet has become the number one source to information, and many of the traditional software applications have become Web Applications.</p>
+					
 				</div>
 			</details>
 		</div>

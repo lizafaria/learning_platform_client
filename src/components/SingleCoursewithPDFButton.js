@@ -18,15 +18,18 @@ const SingleCoursewithPDFButton = () => {
 
     return (
         <div className='grid grid-cols-2 bg-gradient-to-r from-cyan-500 to-indigo-800'>
+            
             <div id='jsprfdownload' className="flex ml-16 mt-5 mb-5 flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md bg-gray-900 text-gray-100">
 	<div className="flex space-x-4">
+    <h2 className="mb-1 text-xl font-semibold ">{subject.title}</h2>
 		<button onClick={hadnlePDF} className="bg-sky-900 px-8 py-2 rounded text-white">
             PDF
         </button>
 	</div>
 	<div>
+        
 		<img src={subject.image_url} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 dark:bg-gray-500" />
-		<h2 className="mb-1 text-xl font-semibold">{subject.title}</h2>
+		
 		<p className="text-sm dark:text-gray-400">{subject.details}</p>
 	</div>
 	<div className="flex flex-wrap justify-between">

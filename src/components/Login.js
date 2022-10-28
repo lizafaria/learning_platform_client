@@ -59,7 +59,7 @@ const handleGithubLogin=()=>{
 
 
     return (
-        <div className='grid justify-center'>
+        <div className='grid justify-center mt-5 mb-5'>
            <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-900 text-gray-100">
 	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
 	<p className="text-sm text-center dark:text-gray-400">Dont have account?
