@@ -59,8 +59,8 @@ const handleGithubLogin=()=>{
 
 
     return (
-        <div>
-           <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
+        <div className='grid justify-center'>
+           <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-gray-900 text-gray-100">
 	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
 	<p className="text-sm text-center dark:text-gray-400">Dont have account?
 		<Link href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Sign up here</Link>
@@ -94,12 +94,12 @@ const handleGithubLogin=()=>{
 			<div className="space-y-2">
 				<div className="flex justify-between">
 					<label for="password" className="text-sm">Password</label>
-					<a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-gray-400">Forgot password?</a>
+					<Link rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-900">Forgot password?</Link>
 				</div>
-				<input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" />
+				<input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 text-gray-900 focus:dark:border-violet-400" />
 			</div>
 		</div>
-		<button type="button" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">Sign in</button>
+		<button type="button" className="w-full px-8 py-3 font-semibold rounded-md bg-violet-400 hover:text-gray-100 hover:bg-violet-800 text-gray-600">Sign in</button>
 	</form>
 </div>
         </div>

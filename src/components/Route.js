@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "./Blog";
-import Course from "./Course";
+import Course from "./Courses";
 import CourseDetails from "./CourseDetails";
 import ErrorPage from "./ErrorPage";
 import FAQ from "./FAQ";
@@ -10,6 +10,7 @@ import Main from "./Main";
 import ProtectedRoute from "./ProtectedRoute";
 import Register from "./Register";
 import Selected from "./Selected";
+import SingleCoursewithPDFButton from "./SingleCoursewithPDFButton";
 
 const router=createBrowserRouter([{
     path:'/',
@@ -30,9 +31,9 @@ const router=createBrowserRouter([{
             element:<Course></Course>,
         },
         {
-            path:'/books/id',
+            path:'/books/:id',
             loader:({params})=>fetch(`https://assignment-10-server-orpin-five.vercel.app/books/${params.id}`),
-            element:<CourseDetails></CourseDetails>,
+            element:<SingleCoursewithPDFButton></SingleCoursewithPDFButton>
         },
         {
             path:'/register',
@@ -51,7 +52,7 @@ const router=createBrowserRouter([{
             element:<FAQ></FAQ>,
         },
         {
-            path:'/selected/:id',
+            path:'/checked/:id',
             loader:({params})=>fetch(`https://assignment-10-server-orpin-five.vercel.app/books/${params.id}`),
             element:<ProtectedRoute><Selected></Selected></ProtectedRoute>,
         },
